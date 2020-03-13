@@ -11,7 +11,7 @@ from redis import Redis
 
 class Dev():
     ENV = 'development'
-    BASE_ROOT = os.path.dirname(__file__)
+    BASE_ROOT = os.path.dirname(os.path.abspath(__file__))
 
     SECRET_KEY = 'chen2342f'
 
